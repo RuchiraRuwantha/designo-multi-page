@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Jost;
+  src: url('./assets/fonts/Jost-Medium.ttf');
+}
+
+@import 'tailwindcss';
+
+#root {
+  width: 100%;
+  /* margin: 0 auto; */
+  /* padding: 2rem;
+  text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@theme {
+  --font-jost: Jost, 'sans-serif';
+}
+
+@layer components {
+  .black {
+    @apply bg-[#1D1C1E];
+  }
+
+  .peach {
+    @apply bg-[#E7816B];
+  }
+}
+
+.app-bg {
+  background-image: url('./assets/images/Rectangle.svg'), url('./assets/images/Rectangle-2.svg');
+  background-position: left 0% top 12%, right 0% top 95%;
+  background-repeat: no-repeat, no-repeat;
+}
