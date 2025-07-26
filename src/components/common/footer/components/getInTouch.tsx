@@ -18,7 +18,7 @@ const GetInTouch = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-end">
-                    <button className="rounded-[8px] text-[#333136] bg-white md:text-[15px] leading-[auto] tracking-wide font-normal transition hover:text-white hover:bg-[#FFAD9B] p-4 cursor-pointer">
+                    <button className="rounded-[8px] text-[#333136] bg-white md:text-[15px] leading-[auto] tracking-wide font-normal transition hover:text-white hover:bg-[#FFAD9B] sm:p-4 p-3 cursor-pointer">
                         GET IN TOUCH
                     </button>
                 </div>

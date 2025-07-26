@@ -1,4 +1,4 @@
-import DesignsTiles from "../../components/common/designNavTiles/designsTiles";
+import DesignsTiles from "../../components/common/designNavTiles/DesignsTiles";
 import LearnMore from "./components/learnMore";
 import QualitiesTiles from "./components/qualitiesTiles";
 
