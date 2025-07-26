@@ -57,8 +57,16 @@
     @apply bg-[#1D1C1E];
   }
 
+  .black-font {
+    @apply text-[#333136] text-base/[26px] font-normal;
+  }
+
   .peach {
     @apply bg-[#E7816B];
+  }
+
+  .peach-font {
+    @apply text-[#E7816B] text-xl/[26px] font-medium
   }
 }
 

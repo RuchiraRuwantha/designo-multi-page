@@ -3,7 +3,7 @@ import twitter from "../../../assets/images/twitter.svg";
 import pinterest from "../../../assets/images/Pinterest.svg";
 import youtube from "../../../assets/images/youtube.svg";
 import instagram from "../../../assets/images/instagram.svg";
-import GetInTouch from "../../../pages/Home/components/getInTouch";
+import GetInTouch from "./components/getInTouch";
 import FooterNav from "./components/FooterNav";
 
 const Footer = () => {

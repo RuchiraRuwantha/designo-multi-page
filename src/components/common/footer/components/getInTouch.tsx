@@ -1,6 +1,6 @@
-import background from "../../../assets/images/get_in_touch_bg.png";
-import background2 from "../../../assets/images/get_in_touch_bg_2.png";
-import background3 from "../../../assets/images/get_in_touch_bg_3.png";
+import background from "../../../../assets/images/get_in_touch_bg.png";
+import background2 from "../../../../assets/images/get_in_touch_bg_2.png";
+import background3 from "../../../../assets/images/get_in_touch_bg_3.png";
 
 const GetInTouch = () => {
     return (
