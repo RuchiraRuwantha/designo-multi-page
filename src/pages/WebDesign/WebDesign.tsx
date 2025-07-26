@@ -1,7 +1,7 @@
 import DesignComponent from "../../components/common/designcomponent/Design";
 import DesignsTiles from "../../components/common/designNavTiles/designsTiles";
 // import { WebDesignContent } from "../../utils/constants";
-import ContentComponent from "./components/ContentComponent";
+import ContentComponent from "../../components/common/contentComponent/ContentComponent";
 
 const WebDesign = () => {
     return (
