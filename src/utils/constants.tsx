@@ -13,6 +13,10 @@ import faceit from "../assets/images/faceit.svg";
 import todo from "../assets/images/todo.svg";
 import loopstudios from "../assets/images/loopstudios.svg";
 
+import timBrown from "../assets/images/tim-brown.svg";
+import boxedWater from "../assets/images/boxed-water.svg";
+import science from "../assets/images/science.svg";
+
 export const Pages: {
     title: string;
     href: string;
@@ -100,5 +104,23 @@ export const appDesignContent: ContentProps[] = [
         title: 'LOOPSTUDIOS',
         desc: <span>A VR experience app made for<br /> Loopstudios</span>,
         image: loopstudios
+    }
+]
+
+export const graphicDesignContent: ContentProps[] = [
+    {
+        title: 'TIM BROWN',
+        desc: <span>A book cover designed for Tim Brown’s <br />new release, ‘Change’</span>,
+        image: timBrown
+    },
+    {
+        title: 'BOXED WATER',
+        desc: <span>A simple packaging concept made for <br />Boxed Water</span>,
+        image: boxedWater
+    },
+    {
+        title: 'SCIENCE!',
+        desc: <span>A poster made in collaboration with the<br />Federal Art Project</span>,
+        image: science
     }
 ]
