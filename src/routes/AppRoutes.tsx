@@ -7,11 +7,13 @@ import Graphic from '../pages/Graphic/Graphic';
 import Location from '../pages/Locations/Location';
 import WebDesign from '../pages/WebDesign/WebDesign';
 import Contact from "../pages/Contact/Contact";
+import ScrollToTop from "../components/specific/ScrollToTop";
 
 function AppRoutes() {
     return (
         <Router>
             <Layout>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/appdesign" element={<AppDesign />} />
