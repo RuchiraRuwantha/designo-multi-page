@@ -1,13 +1,18 @@
-import { WebDesignContent } from "../../../utils/constants";
+import type { FC } from "react";
+import { type ContentProps } from "../../../utils/constants";
 import ContentTile from "./ContentTile";
 
-const ContentComponent = () => {
+type ContentComponentProps = {
+    designContent: ContentProps[]
+}
+
+const ContentComponent: FC<ContentComponentProps> = ({ designContent }) => {
     return (
         <div className="grid grid-cols-3 gap-6">
             {
-                WebDesignContent.map((items, index) => {
+                designContent.map((items, index) => {
                     return (
-                        <ContentTile key={index} index={index} contentItem={items}/>
+                        <ContentTile key={index} index={index} contentItem={items} />
                     )
                 })
             }
