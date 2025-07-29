@@ -1,7 +1,12 @@
+import { LocationData } from "../../utils/constants";
+import LocationComponentTile from "./components/LocationComponentTile";
+
 const Location = () => {
     return (
-        <div>
-            <h2>LOCATION</h2>
+        <div className="flex flex-col lg:gap-10 sm:gap-24 gap-10 mb-12">
+            {
+                LocationData.map((location, index) => <LocationComponentTile key={index} index={index} location={location} />)
+            }
         </div>
     );
 }

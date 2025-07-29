@@ -5,7 +5,7 @@ const LocationTile: FC<LocationContentProps> = ({ country, imageUrl }) => {
     return (
         <div className="flex flex-col justify-between items-center gap-8 px-16">
             <img src={imageUrl} />
-            <div className="text-[20px]/[26px] tracking-wider black-font">{country}</div>
+            <div className="text-[20px]/[26px] tracking-wider black-font uppercase">{country}</div>
             <a href="#" className="inline-block bg-[#E7816B] text-white px-6 py-4 rounded-md font-medium text-[15px] leading-(auto) tracking-wide shadow transition hover:text-white hover:bg-[#FFAD9B]">
                 SEE LOCATION
             </a>
