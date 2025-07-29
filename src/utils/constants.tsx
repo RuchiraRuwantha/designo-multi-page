@@ -31,13 +31,17 @@ import boxedWaterTablet from "../assets/images/boxed-water-tablet.svg";
 import science from "../assets/images/science.svg";
 import scienceTablet from "../assets/images/science-tablet.svg";
 
+import canada from "../assets/images/canada.svg";
+import uk from "../assets/images/uk.svg";
+import australia from "../assets/images/australia.svg";
+
 export const Pages: {
     title: string;
     href: string;
 }[] = [
         {
             title: 'OUR COMPANY',
-            href: '/'
+            href: '/about'
         },
         {
             title: 'LOCATION',
@@ -151,5 +155,24 @@ export const graphicDesignContent: ContentProps[] = [
         desc: <span>A poster made in collaboration with the<br />Federal Art Project</span>,
         image: science,
         image_tablet: scienceTablet
+    }
+]
+
+export type LocationContentProps = {
+    country: string;
+    imageUrl: string;
+}
+export const LocationContent: LocationContentProps[] = [
+    {
+        country: 'CANADA',
+        imageUrl: canada,
+    },
+    {
+        country: 'AUSTRALIA',
+        imageUrl: australia,
+    },
+    {
+        country: 'UK',
+        imageUrl: uk,
     }
 ]

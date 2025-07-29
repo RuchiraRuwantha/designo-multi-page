@@ -15,7 +15,6 @@ const ContentTile: FC<ContentTileProps> = ({ index, contentItem }) => {
             <picture className="w-full">
                 <source media="(min-width: 1024px)" srcSet={contentItem.image} />
                 <source media="(min-width: 640px)" srcSet={contentItem.image_tablet} />
-                {/* <img src="/images/mobile.jpg" alt="Responsive image" /> */}
                 <img src={contentItem.image} className="w-full lg:rounded-t-md lg:rounded-l-none sm:rounded-l-2xl" />
             </picture>
             <div className="flex flex-col justify-around items-center gap-4 sm:py-0 py-6">
@@ -23,7 +22,7 @@ const ContentTile: FC<ContentTileProps> = ({ index, contentItem }) => {
                 <div className="black-font text-center">{contentItem.desc}</div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ContentTile;
