@@ -1,0 +1,25 @@
+<svg width="1111" height="640" viewBox="0 0 1111 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1111" height="640" rx="15" fill="#FDF3F0"/>
+<mask id="mask0_0_9065" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1111" height="640">
+<rect width="1111" height="640" rx="15" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_9065)">
+</g>
+<g clip-path="url(#clip0_0_9065)">
+<circle opacity="0.06" cx="146" cy="146" r="146" transform="matrix(1 0 0 -1 1 640)" fill="url(#paint0_linear_0_9065)"/>
+<circle opacity="0.06" cx="146" cy="146" r="146" transform="matrix(0 1 1 0 293 348)" fill="url(#paint1_linear_0_9065)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_9065" x1="0" y1="292" x2="292" y2="292" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5D0202" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#5D0202" stop-opacity="0.497569"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_9065" x1="0" y1="292" x2="292" y2="292" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5D0202" stop-opacity="0.01"/>
+<stop offset="1" stop-color="#5D0202" stop-opacity="0.497569"/>
+</linearGradient>
+<clipPath id="clip0_0_9065">
+<rect width="584" height="292" fill="white" transform="translate(1 348)"/>
+</clipPath>
+</defs>
+</svg>
