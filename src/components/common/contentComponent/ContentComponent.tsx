@@ -8,7 +8,7 @@ type ContentComponentProps = {
 
 const ContentComponent: FC<ContentComponentProps> = ({ designContent }) => {
     return (
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-8 sm:px-0 px-6">
             {
                 designContent.map((items, index) => {
                     return (

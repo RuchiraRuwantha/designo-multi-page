@@ -66,12 +66,20 @@
   }
 
   .peach-font {
-    @apply text-[#E7816B] text-xl/[26px] font-medium
+    @apply text-[#E7816B] text-xl/[26px] font-medium;
+  }
+
+  .contentItem:hover {
+    .black-font,
+    .peach-font {
+      @apply !text-white;
+    }
   }
 }
 
 .app-bg {
-  background-image: url('./assets/images/Rectangle.svg'), url('./assets/images/Rectangle-2.svg');
+  background-image: url('./assets/images/Rectangle.svg'),
+    url('./assets/images/Rectangle-2.svg');
   background-position: left 0% top 12%, right 0% top 95%;
   background-repeat: no-repeat, no-repeat;
 }
