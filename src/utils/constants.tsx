@@ -34,6 +34,7 @@ import scienceTablet from "../assets/images/science-tablet.svg";
 import canada from "../assets/images/canada.svg";
 import uk from "../assets/images/uk.svg";
 import australia from "../assets/images/australia.svg";
+import type { Country, iLocationData } from "../types";
 
 export const Pages: {
     title: string;
@@ -159,20 +160,59 @@ export const graphicDesignContent: ContentProps[] = [
 ]
 
 export type LocationContentProps = {
-    country: string;
+    country: Country;
     imageUrl: string;
 }
 export const LocationContent: LocationContentProps[] = [
     {
-        country: 'CANADA',
+        country: 'Canada',
         imageUrl: canada,
     },
     {
-        country: 'AUSTRALIA',
+        country: 'Australia',
         imageUrl: australia,
     },
     {
-        country: 'UK',
+        country: 'United Kingdom',
         imageUrl: uk,
+    }
+]
+
+export const LocationData: iLocationData[] = [
+    {
+        country: "Canada",
+        address: {
+            addressLine: <span>3886 Wellington Street<br />Toronto, Ontario M9C 3J5</span>,
+            officeName: 'Designo Central Office'
+        },
+        contactInfo: {
+            emailAddress: 'contact@designo.co',
+            phoneNumber: '+1 253-863-8967'
+        },
+        mapPosition: [43.64404539027409, -79.3945388029068]
+    },
+    {
+        country: "Australia",
+        address: {
+            addressLine: <span>19 Balonne Street<br />New South Wales 2443</span>,
+            officeName: 'Designo AU Office'
+        },
+        contactInfo: {
+            emailAddress: 'contact@designo.au',
+            phoneNumber: '(02) 6720 9092'
+        },
+        mapPosition: [-30.329381172526176, 149.78819579689454]
+    },
+    {
+        country: "United Kingdom",
+        address: {
+            addressLine: <span>13  Colorado Way<br />Rhyd-y-fro SA8 9GA</span>,
+            officeName: 'Designo UK Office'
+        },
+        contactInfo: {
+            emailAddress: 'contact@designo.uk',
+            phoneNumber: '078 3115 1400'
+        },
+        mapPosition: [53.71024542274144, -1.341504073639936]
     }
 ]

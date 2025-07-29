@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ color = '#333136' }) => {
    }, []);
 
    return (
-      <div ref={divRef} className='w-full flex sm:static sm:flex-row sm:py-0 sm:bg-transparent flex-col fixed top-0 z-40 py-10 bg-white'>
+      <div ref={divRef} className='w-full flex sm:static sm:flex-row sm:py-0 sm:bg-transparent flex-col fixed top-0 z-50 py-10 bg-white'>
          <div className='w-full sm:mb-16 flex justify-between items-center sm:px-0 px-5 '>
             <div className='sm:w-auto w-full sm:block flex justify-between items-center'>
                <Logo color={color} />
