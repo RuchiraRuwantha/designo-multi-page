@@ -2,6 +2,7 @@ import { Logo } from '../images/image';
 import type React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import NavItems from './components/NavItems';
+import { useNavigate } from 'react-router-dom';
 
 type HeaderProps = {
    color?: string
@@ -14,6 +15,8 @@ const Header: React.FC<HeaderProps> = ({ color = '#333136' }) => {
 
    const divRef = useRef<HTMLDivElement>(null);
 
+   const navigate = useNavigate();
+
    useEffect(() => {
       if (divRef.current) {
          const height = divRef.current.getBoundingClientRect().height;
@@ -25,7 +28,9 @@ const Header: React.FC<HeaderProps> = ({ color = '#333136' }) => {
       <div ref={divRef} className='w-full flex sm:static sm:flex-row sm:py-0 sm:bg-transparent flex-col fixed top-0 z-50 py-10 bg-white'>
          <div className='w-full sm:mb-16 flex justify-between items-center sm:px-0 px-5 '>
             <div className='sm:w-auto w-full sm:block flex justify-between items-center'>
-               <Logo color={color} />
+               <div className='cursor-pointer' onClick={() => navigate('/')}>
+                  <Logo color={color} />
+               </div>
                <button data-collapse-toggle="navbar-default" type="button" aria-controls="mobile-menu" aria-expanded="false"
                   className="relative sm:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
                   onClick={() => setIsOpen(!isOpen)}

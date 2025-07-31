@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex flex-col font-jost w-full h-full">
-      <main className="app-bg w-full h-full lg:pt-14 pt-[116px] lg:px-64 md:px-8 sm:pb-[350px] pb-60">
+      <main className="app-bg w-full h-full lg:pt-14 pt-[116px] lg:px-64 md:px-8">
         <Header />
         <div className="w-full">
           {children}
