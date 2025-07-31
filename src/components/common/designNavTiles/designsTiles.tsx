@@ -7,8 +7,6 @@ const DesignsTiles = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    console.log(location.pathname === '/');
-
     return (
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 overflow-hidden sm:px-0 px-5">
             {
