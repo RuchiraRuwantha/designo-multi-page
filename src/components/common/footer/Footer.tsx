@@ -15,8 +15,8 @@ const Footer = () => {
         <div className="pt-40 pb-[70px] lg:px-64 px-12 bg-[#1D1C1E] relative" style={{ paddingTop: location.pathname === '/contact' ? '60px' : '' }}>
             {
                 location.pathname !== '/contact' ?
-            <div className="absolute lg:bottom-3/4 bottom-5/6 left-0 w-full pt-16 lg:px-64 px-12 pb-2">
-                <GetInTouch />
+                    <div className="absolute lg:bottom-3/4 bottom-5/6 left-0 w-full pt-16 lg:px-64 px-12 pb-2">
+                        <GetInTouch />
                     </div> : null
             }
             <FooterNav />
@@ -26,8 +26,8 @@ const Footer = () => {
                     3886 Wellington Street<br />
                     Toronto, Ontario M9C 3J5
                 </div>
-                <div className="md:text-base leading-[26px] tracking-[0px] flex flex-col items-start text-[#F1F3F5] opacity-60 font-bold">
-                    Contact Us (Central Office)<br />
+                <div className="md:text-base leading-[26px] tracking-[0px] flex flex-col items-start text-[#F1F3F5] font-light opacity-60">
+                    <span className="font-bold">Contact Us (Central Office)</span>
                     P : +1 253-863-8967 <br />
                     M : contact@designo.co
                 </div>

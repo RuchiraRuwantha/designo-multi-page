@@ -14,7 +14,7 @@ const LocationComponentTile: FC<LocationComponentTileProps> = ({ location, index
                 <div className="sm:text-[40px]/[48px] text-[32px]/[36px] tracking-normal flex sm:justify-start justify-center items-center w-full peach-font">
                     {location.country}
                 </div>
-                <div className="flex sm:flex-row flex-col black-font w-full sm:gap-28 gap-6 items-center text-center">
+                <div className="flex sm:flex-row flex-col black-font w-full sm:gap-28 gap-6 items-center text-center lg:text-left">
                     <div>
                         <span className="font-bold">{location.address.officeName}<br /></span>
                         {location.address.addressLine}
