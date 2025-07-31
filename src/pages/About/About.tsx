@@ -12,7 +12,7 @@ const About = () => {
         return imageMap[imageName]?.[breakPoint]
     };
     return (
-        <div className="flex flex-col lg:gap-32 sm:gap-28 mb-12">
+        <div className="flex flex-col lg:gap-32 sm:gap-28 mb-12 sm:pb-[350px] pb-60">
             <AboutTile
                 bgImage={breakPoint === "mobile" ? '/images/about-us-mobile-bg.png' : '/images/about-us-bg.svg'}
                 desc={<span>Founded in 2010, we are a creative agency that produces lasting results for our clients. We’ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences.</span>}

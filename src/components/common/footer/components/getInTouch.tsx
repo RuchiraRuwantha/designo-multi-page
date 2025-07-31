@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import background from "../../../../assets/images/get_in_touch_bg.png";
 import background2 from "../../../../assets/images/get_in_touch_bg_2.png";
 import background3 from "../../../../assets/images/get_in_touch_bg_3.png";
 
 const GetInTouch = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className="relative mt-12 h-full">
             <img src={background} className="w-full hidden lg:block" />
@@ -18,7 +22,10 @@ const GetInTouch = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-end">
-                    <button className="rounded-[8px] text-[#333136] bg-white md:text-[15px] leading-[auto] tracking-wide font-normal transition hover:text-white hover:bg-[#FFAD9B] sm:p-4 p-3 cursor-pointer">
+                    <button
+                        className="rounded-[8px] text-[#333136] bg-white md:text-[15px] leading-[auto] tracking-wide font-normal transition hover:text-white hover:bg-[#FFAD9B] sm:p-4 p-3 cursor-pointer"
+                        onClick={() => navigate('/contact')}
+                    >
                         GET IN TOUCH
                     </button>
                 </div>
