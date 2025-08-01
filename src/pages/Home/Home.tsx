@@ -4,7 +4,7 @@ import QualitiesTiles from "./components/qualitiesTiles";
 
 const Home = () => {
     return (
-        <div className="flex flex-col lg:gap-32 gap-28 sm:pb-[350px] pb-60">
+        <div className="flex flex-col lg:gap-32 gap-28 lg:pb-[200px] sm:pb-[350px] pb-60">
             <LearnMore />
             <DesignsTiles />
             <QualitiesTiles />
