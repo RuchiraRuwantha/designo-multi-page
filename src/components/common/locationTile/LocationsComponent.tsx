@@ -7,7 +7,7 @@ const LocationComponent = () => {
             {
                 LocationContent.map((item, index) => {
                     return (
-                        <LocationTile key={index} country={item.country} imageUrl={item.imageUrl} />
+                        <LocationTile key={index} country={item.country} countryId={item.countryId} imageUrl={item.imageUrl} />
                     )
                 })
             }
