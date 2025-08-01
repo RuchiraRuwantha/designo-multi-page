@@ -34,7 +34,7 @@ import scienceTablet from "../assets/images/science-tablet.svg";
 import canada from "../assets/images/canada.svg";
 import uk from "../assets/images/uk.svg";
 import australia from "../assets/images/australia.svg";
-import type { Country, iLocationData } from "../types";
+import type { Country, CountryId, iLocationData } from "../types";
 
 export const Pages: {
     title: string;
@@ -161,19 +161,23 @@ export const graphicDesignContent: ContentProps[] = [
 
 export type LocationContentProps = {
     country: Country;
+    countryId: CountryId;
     imageUrl: string;
 }
 export const LocationContent: LocationContentProps[] = [
     {
         country: 'Canada',
+        countryId: 'Canada',
         imageUrl: canada,
     },
     {
         country: 'Australia',
+        countryId: 'Australia',
         imageUrl: australia,
     },
     {
         country: 'United Kingdom',
+        countryId: 'United-Kingdom',
         imageUrl: uk,
     }
 ]
@@ -181,6 +185,7 @@ export const LocationContent: LocationContentProps[] = [
 export const LocationData: iLocationData[] = [
     {
         country: "Canada",
+        countryId: "Canada",
         address: {
             addressLine: <span>3886 Wellington Street<br />Toronto, Ontario M9C 3J5</span>,
             officeName: 'Designo Central Office'
@@ -193,6 +198,7 @@ export const LocationData: iLocationData[] = [
     },
     {
         country: "Australia",
+        countryId: "Australia",
         address: {
             addressLine: <span>19 Balonne Street<br />New South Wales 2443</span>,
             officeName: 'Designo AU Office'
@@ -205,6 +211,7 @@ export const LocationData: iLocationData[] = [
     },
     {
         country: "United Kingdom",
+        countryId: "United-Kingdom",
         address: {
             addressLine: <span>13  Colorado Way<br />Rhyd-y-fro SA8 9GA</span>,
             officeName: 'Designo UK Office'
