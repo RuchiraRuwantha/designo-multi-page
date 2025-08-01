@@ -167,17 +167,17 @@ export type LocationContentProps = {
 export const LocationContent: LocationContentProps[] = [
     {
         country: 'Canada',
-        countryId: 'Canada',
+        countryId: 'canada',
         imageUrl: canada,
     },
     {
         country: 'Australia',
-        countryId: 'Australia',
+        countryId: 'australia',
         imageUrl: australia,
     },
     {
         country: 'United Kingdom',
-        countryId: 'United-Kingdom',
+        countryId: 'united-kingdom',
         imageUrl: uk,
     }
 ]
@@ -185,7 +185,7 @@ export const LocationContent: LocationContentProps[] = [
 export const LocationData: iLocationData[] = [
     {
         country: "Canada",
-        countryId: "Canada",
+        countryId: "canada",
         address: {
             addressLine: <span>3886 Wellington Street<br />Toronto, Ontario M9C 3J5</span>,
             officeName: 'Designo Central Office'
@@ -198,7 +198,7 @@ export const LocationData: iLocationData[] = [
     },
     {
         country: "Australia",
-        countryId: "Australia",
+        countryId: "australia",
         address: {
             addressLine: <span>19 Balonne Street<br />New South Wales 2443</span>,
             officeName: 'Designo AU Office'
@@ -211,7 +211,7 @@ export const LocationData: iLocationData[] = [
     },
     {
         country: "United Kingdom",
-        countryId: "United-Kingdom",
+        countryId: "united-kingdom",
         address: {
             addressLine: <span>13  Colorado Way<br />Rhyd-y-fro SA8 9GA</span>,
             officeName: 'Designo UK Office'

@@ -4,7 +4,7 @@ export type ImageKey = 'aboutus' | 'talent' | 'deal';
 export type Breakpoint = 'desktop' | 'tablet' | 'mobile';
 
 export type Country = 'Canada' | 'Australia' | 'United Kingdom';
-export type CountryId = 'Canada' | 'Australia' | 'United-Kingdom';
+export type CountryId = 'canada' | 'australia' | 'united-kingdom';
 interface iAddressData {
     officeName: string,
     addressLine: JSX.Element
