@@ -5,7 +5,7 @@ import { WebDesignContent } from "../../utils/constants";
 
 const WebDesign = () => {
     return (
-        <div className="flex flex-col lg:gap-32 sm:gap-28 gap-20 mb-12 sm:pb-[350px] pb-60">
+        <div className="flex flex-col lg:gap-32 sm:gap-28 gap-20 mb-12 sm:pb-[350px] 2xl:pb-[350px] lg:pb-60 pb-60">
             <DesignComponent
                 title="Web Design"
                 desc={<span>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</span>}

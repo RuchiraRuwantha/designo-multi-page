@@ -5,7 +5,7 @@ import youtube from "../../../assets/images/youtube.svg";
 import instagram from "../../../assets/images/instagram.svg";
 import FooterNav from "./components/FooterNav";
 import { useLocation } from "react-router-dom";
-import GetInTouch from "./components/getInTouch";
+import GetInTouch from "./components/GetInTouchComponent";
 
 const Footer = () => {
 
