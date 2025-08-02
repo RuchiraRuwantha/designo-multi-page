@@ -15,8 +15,9 @@ const LocationComponentTile: FC<LocationComponentTileProps> = ({ locationData, i
 
     useEffect(() => {
         if (location.hash) {
+            const id = location.hash.replace('#', '');
             setTimeout(() => {
-                const el = document.querySelector(location.hash);
+                const el = document.querySelector(id);
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
             }, 100);
         }
