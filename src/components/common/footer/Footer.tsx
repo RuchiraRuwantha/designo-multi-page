@@ -3,9 +3,9 @@ import twitter from "../../../assets/images/twitter.svg";
 import pinterest from "../../../assets/images/pinterest.svg";
 import youtube from "../../../assets/images/youtube.svg";
 import instagram from "../../../assets/images/instagram.svg";
-import GetInTouch from "./components/GetInTouch";
 import FooterNav from "./components/FooterNav";
 import { useLocation } from "react-router-dom";
+import GetInTouch from "./components/GetInTouch";
 
 const Footer = () => {
 
